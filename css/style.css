@@ -1,0 +1,164 @@
+:root {
+    --text-StrongColor: hsla(0, 0%, 100%, 1);
+    --text-ligthGreyColor: hsla(240, 7%, 78%, 1);
+    --text-primaryColor: hsla(240, 9%, 89%, 1);
+
+
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+
+    height: 100vh;
+
+
+}
+
+.home {
+    background: url("../assets/bg-home.png") no-repeat center fixed;
+    background-size: cover;
+
+}
+
+.universe {
+    background: url("../assets/bg-universe.png")no-repeat center fixed;
+    background-size: cover;
+
+}
+
+.exploration {
+    background: url("../assets/bg-exploration.png") no-repeat center fixed;
+    background-size: cover;
+
+}
+
+
+nav {
+    margin: 1.0rem;
+
+    display: flex;
+    gap: 5.3rem;
+    align-items: center;
+    align-content: center;
+
+    padding: 4.0rem 7.2rem;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 2.0rem;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-ligthGreyColor);
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+}
+
+li a:hover {
+    color: var(--text-StrongColor);
+    font-size: 2.4rem;
+
+    transition-duration: 0.2s;
+}
+
+/*    ESTILIZAÇÃO  HOME   */
+
+main {
+    margin-top: 22.2rem;
+    text-align: center;
+
+}
+
+main h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 6.0rem;
+    color: var(--text-primaryColor);
+
+}
+
+main #btn-more {
+    background-color: transparent;
+
+    margin-top: 2.4rem;
+    padding: 1.2rem 3.2rem;
+    border-radius: 0.5rem;
+    border: solid 0.2rem #fff;
+
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--text-StrongColor);
+
+
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+#btn-more:hover {
+    color: #02799D;
+    background: #FFF;
+
+    transition-duration: 0.3s;
+}
+
+
+/* AJUSTES MOBILE */
+
+@media (max-width: 580px) {
+    body {
+        font-size: 1.4rem;
+    }
+
+    header img {
+        display: none;
+    }
+
+    nav {
+        width: auto;
+        padding: 2.0rem;
+    }
+
+    nav ul li a,
+    li a:hover {
+        font-size: 1.7rem;
+    }
+
+}
+
+@media (max-width: 470px) {
+    body {
+        font-size: 1.4rem;
+    }
+
+    nav {
+        padding: 2.0rem;
+    }
+
+    nav ul li a
+     {
+        font-size: 1.4rem;
+    }
+    
+    li a:hover{
+        font-size: 1.2rem;
+    }
+
+    
+
+    main h1 {
+        font-size: 4.0rem;
+    }
+
+    main #btn-more {
+        font-size: 2.0rem;
+    }
+}
