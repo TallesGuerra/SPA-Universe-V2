@@ -26,10 +26,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - HTML
 - CSS
-- JavaScript
+- JavaScripts
 - Node.js
 
 <br/>
 
-# 💻 Você pode acessar [aqui]()
+# 💻 Você pode acessar [aqui](https://spa-universe-v2.vercel.app/)
 
